@@ -10,55 +10,165 @@
     <!-- ---HEADER--- -->
     <header>
       <!--    Logó    -->
-      <a href="fooldal"></a>
+      <a class="header-logo" href="fooldal"></a>
 
       <!--  Navigáció   -->
-      <ul>
-        <li><a href="fooldal">Főoldal</a></li>
-        <li><a href="rolam">Rólam</a></li>
-        <li><a href="portfolio">Portfólió</a></li>
-        <li><a href="kapcsolat">Kapcsolat</a></li>
+      <ul class="header-nav">
+        <li class="header-nav__elem">
+          <a href="./index.html#fooldal">Főoldal</a>
+        </li>
+        <li class="header-nav__elem">
+          <a href="./index.html#rolam">Rólam</a>
+        </li>
+        <li class="header-nav__elem">
+          <a href="./index.html#portfolio">Portfólió</a>
+        </li>
+        <li class="header-nav__elem">
+          <a href="./index.html#kapcsolat">Kapcsolat</a>
+        </li>
       </ul>
     </header>
     <!--x ---HEADER--- X-->
 
     <main>
       <!-- ---FŐOLDAl---    -->
-      <section id="fooldal"></section>
+      <section id="fooldal" class="fooldal">
+        <div class="fooldal-container">
+          <h1 class="fooldal-container__nev">Denem Tom</h1>
+          <h2 class="fooldal-container__foglalkozas">Frontend Webfejlesztő</h2>
+          <button class="fooldal-container__gomb">Kapcsolat</button>
+        </div>
+        <img class="fooldal-kep" src="./assets/main.png" alt="Denem Tom" />
+      </section>
       <!--X ---FŐOLDAl---X    -->
 
       <!-- ---RÓLAM---    -->
-      <section id="rolam"></section>
+      <section id="rolam" class="rolam">
+        <h2 class="rolam-cim">Rólam</h2>
+        <div class="rolam-container">
+          <div class="rolam-kepessegek">
+            <img
+              class="rolam-kepessegek__kep"
+              src="./assets/main.png"
+              alt="Denem Tom"
+            />
+            <div class="rolam-kepessegek__container">
+              <ul class="rolam-kepessegek__lista">
+                <li class="rolam-kepessegek__elem">HTML</li>
+                <li class="rolam-kepessegek__elem">CSS</li>
+                <li class="rolam-kepessegek__elem">JavaScript</li>
+                <li class="rolam-kepessegek__elem">Wordpress</li>
+              </ul>
+            </div>
+          </div>
+          <div class="rolam-tartalom">
+            <h4 class="rolam-tartalom__udv">Hello, az én nevem</h4>
+            <h3 class="rolam-tartalom__nev">Denem Tom</h3>
+            <h4 class="rolam-tartalom__udv">Frontend Webfejlesztő</h4>
+            <p class="rolam-tartalom__szoveg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu
+              sit enim aliquet ligula mauris tristique amet. Tempor, sit quis
+              consequat arcu. Enim elit id imperdiet pellentesque morbi
+              elementum facilisis nunc.
+            </p>
+            <div class="rolam-tartalom__container">
+              <button class="rolam-tartalom__gomb">Kapcsolat</button>
+              <button class="rolam-tartalom__gomb">Kapcsolat</button>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--X ---RÓLAM---X    -->
 
       <!-- ---PORTFÓLIÓ---    -->
-      <section id="portfolio"></section>
+      <section id="portfolio" class="portfolio">
+        <h2 class="portfolio-cim">Portfólió</h2>
+        <div class="portfolio-container">
+          <div class="portfolio-projekt">
+            <img
+              class="portfolio-projekt__kep"
+              src="./assets/projekt.png"
+              alt="Az én projektem"
+            />
+            <div class="portfolio-projekt__container">
+              <h3>Portfólió oldal</h3>
+              <a href="#">Github</a>
+              <a href="#">Oldal</a>
+            </div>
+          </div>
+          <div class="portfolio-projekt">
+            <img
+              class="portfolio-projekt__kep"
+              src="./assets/projekt.png"
+              alt="Az én projektem"
+            />
+            <div class="portfolio-projekt__container">
+              <h3>Portfólió oldal</h3>
+              <a href="#">Github</a>
+              <a href="#">Oldal</a>
+            </div>
+          </div>
+          <div class="portfolio-projekt">
+            <img
+              class="portfolio-projekt__kep"
+              src="./assets/projekt.png"
+              alt="Az én projektem"
+            />
+            <div class="portfolio-projekt__container">
+              <h3>Portfólió oldal</h3>
+              <a href="#">Github</a>
+              <a href="#">Oldal</a>
+            </div>
+          </div>
+          <div class="portfolio-projekt">
+            <img
+              class="portfolio-projekt__kep"
+              src="./assets/projekt.png"
+              alt="Az én projektem"
+            />
+            <div class="portfolio-projekt__container">
+              <h3>Portfólió oldal</h3>
+              <a href="#">Github</a>
+              <a href="#">Oldal</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--X ---PORTFÓLIÓ---X    -->
 
       <!-- ---KAPCSOLAT---    -->
-      <section id="kapcsolat"></section>
+      <section id="kapcsolat" class="kapcsolat">
+        <h2 class="kapcsolat-cim">Kapcsolat</h2>
+        <h3 class="kapcsolat-szoveg">Lépj velem kapcsolatba</h3>
+        <form class="kapcsolat-form">
+          <input type="text" id="name" name="name" placeholder="Név" />
+          <input type="email" id="email" name="email" placeholder="Email" />
+          <textarea id="message" name="message" placeholder="Üzenet"></textarea>
+          <input type="submit" value="Küld" />
+        </form>
+      </section>
       <!--X ---KAPCSOLAT---X    -->
     </main>
 
     <!-- ---FOOTER--- -->
     <footer>
       <!-- Szociálmédia ikonok -->
-      <ul>
-        <li>twitter</li>
-        <li>linkedin</li>
-        <li>github</li>
+      <ul class="footer-social">
+        <li class="footer-social__elem">twitter</li>
+        <li class="footer-social__elem">linkedin</li>
+        <li class="footer-social__elem">github</li>
       </ul>
 
       <!--  Copyright -->
-      <div>
-        <p>Copyright</p>
-        <div>(C)</div>
-        <p>2022 Buglyó Gergő</p>
+      <div class="footer-copyright">
+        <p class="footer-copyright__elem">Copyright</p>
+        <div class="footer-copyright__elem">(C)</div>
+        <p class="footer-copyright__elem">2022 Buglyó Gergő</p>
       </div>
 
       <!--Vissza a főoldalra-->
-      <div>
-        <a href="#"></a>
+      <div class="footer-vissza">
+        <a href="./index.html#fooldal"></a>
       </div>
     </footer>
     <!--X ---FOOTER--- X-->
