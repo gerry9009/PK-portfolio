@@ -8,6 +8,7 @@
 
     <!--    CSS     -->
     <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,6 +38,16 @@
       <!--  Navigáció   -->
 
       <nav>
+        <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+
+        <label for="nav-checkbox">
+          <div class="nav-checkbox__gomb">
+            <div class="nav-checkbox__vonal"></div>
+            <div class="nav-checkbox__vonal"></div>
+            <div class="nav-checkbox__vonal"></div>
+          </div>
+        </label>
+
         <ul class="nav-list">
           <li class="nav-list__elem"><a href="#fooldal">Főoldal</a></li>
           <li class="nav-list__elem"><a href="#rolam">Rólam</a></li>
