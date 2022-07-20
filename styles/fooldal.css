@@ -1,0 +1,136 @@
+.fooldal {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid var(--orange);
+  overflow: hidden;
+}
+
+.fooldal-container {
+  text-align: center;
+  letter-spacing: 0.3rem;
+  z-index: 2;
+}
+
+.fooldal-container__nev {
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.fooldal-container__foglalkozas {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+
+.fooldal-container__kiemeles {
+  color: var(--orange);
+  margin-bottom: 20px;
+}
+
+.fooldal-container__gomb {
+  border: 2px solid var(--orange);
+  background: var(--orange);
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.fooldal-container__gomb:hover {
+  border: 2px solid var(--white);
+  box-shadow: 1px 1px 5px 1px var(--white);
+}
+
+.fooldal-kep {
+  display: none;
+}
+
+.fooldal-kor__elso {
+  width: 300px;
+  height: 300px;
+  background: var(--black);
+  border-radius: 100%;
+  position: absolute;
+  top: -100px;
+  left: -150px;
+}
+
+.fooldal-kor__masodik {
+  width: 250px;
+  height: 250px;
+  border: 3px solid var(--orange);
+  border-radius: 100%;
+  position: absolute;
+  bottom: -75px;
+  left: -125px;
+}
+
+@media screen and (min-width: 576px) {
+  .fooldal-kor__harmadik {
+    width: 220px;
+    height: 220px;
+    background: var(--orange);
+    border-radius: 100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 120px;
+    right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fooldal {
+    justify-content: flex-start;
+    padding: 5px;
+  }
+  .fooldal-kep {
+    display: block;
+    position: absolute;
+    width: 70vw;
+    max-width: 720px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    filter: grayscale(100%);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fooldal-container {
+    margin-left: 5vw;
+  }
+
+  .fooldal-kep {
+    max-width: 740px;
+  }
+
+  .fooldal-kor__harmadik {
+    top: 50vh;
+    right: 28vw;
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fooldal-container__nev {
+    font-size: 5rem;
+  }
+
+  .fooldal-container__foglalkozas {
+    font-size: 4rem;
+  }
+
+  .fooldal-kor__harmadik {
+    width: 320px;
+    height: 320px;
+    right: 22vw;
+  }
+}
