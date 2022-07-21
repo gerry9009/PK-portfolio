@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 3vh 0;
+  padding: 3vh;
   border-bottom: 1px solid var(--orange);
 }
 
@@ -44,6 +44,12 @@
 }
 
 @media screen and (min-width: 576px) {
+  .portfolio-projekt {
+    box-shadow: 10px 10px 2px 1px var(--lightgray);
+  }
+}
+
+@media screen and (min-width: 768px) {
   .portfolio-projekt {
     box-shadow: 20px 20px 2px 1px var(--lightgray);
   }
