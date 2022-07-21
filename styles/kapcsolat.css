@@ -1,0 +1,102 @@
+.kapcsolat {
+  padding: 3vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kapcsolat-szoveg {
+  color: var(--orange);
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.kapcsolat-form {
+  background: var(--lightgray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 700px;
+}
+
+.kapcsolat-form [type="text"],
+.kapcsolat-form [type="email"],
+.kapcsolat-form textarea {
+  background: var(--lightgray);
+  width: 95%;
+  margin: 1.5vh auto;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  border: 2px solid var(--black);
+  padding: 0.6rem;
+}
+
+.kapcsolat-form [type="text"]:focus,
+.kapcsolat-form [type="email"]:focus,
+.kapcsolat-form textarea:focus {
+  background: var(--white);
+  outline: none;
+}
+
+.kapcsolat-form textarea {
+  height: 25vh;
+}
+
+.kapcsolat-form [type="submit"] {
+  background: var(--orange);
+  border: 2px solid var(--black);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  width: 95%;
+  padding: 1rem;
+  margin: 3vh 0 1vh;
+  cursor: pointer;
+}
+
+.kapcsolat-form [type="submit"]:hover {
+  box-shadow: 0 0 20px 5px var(--white);
+  border: 2px solid var(--white);
+}
+
+.kapcsolat-social {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 700px;
+  margin: 50px;
+}
+
+.kapcsolat-social__elem {
+  font-size: 2rem;
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.kapcsolat-social__elem:hover {
+  box-shadow: 0 0 20px 5px var(--white);
+}
+
+@media screen and (min-width: 576px) {
+  .kapcsolat-szoveg {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .kapcsolat-form [type="submit"] {
+    width: 200px;
+    align-self: flex-end;
+    margin-right: 2.5%;
+  }
+}
