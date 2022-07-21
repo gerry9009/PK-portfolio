@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/fooldal.css" />
+    <link rel="stylesheet" href="./styles/rolam.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,11 +43,11 @@
         <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
 
         <label for="nav-checkbox">
-          <div class="nav-checkbox__gomb">
-            <div class="nav-checkbox__vonal"></div>
-            <div class="nav-checkbox__vonal"></div>
-            <div class="nav-checkbox__vonal"></div>
-          </div>
+          <span class="nav-checkbox__gomb">
+            <span class="nav-checkbox__vonal"></span>
+            <span class="nav-checkbox__vonal"></span>
+            <span class="nav-checkbox__vonal"></span>
+          </span>
         </label>
 
         <ul class="nav-list">
@@ -79,7 +80,7 @@
 
       <!-- ---RÓLAM---    -->
       <section id="rolam" class="rolam">
-        <h2 class="rolam-cim">Rólam</h2>
+        <h2 class="rolam-cim section-cim">Rólam</h2>
         <div class="rolam-container">
           <div class="rolam-kepessegek">
             <img
@@ -88,7 +89,7 @@
               alt="Denem Tom"
             />
             <div class="rolam-kepessegek__container">
-              <p class="rolam-kepessegek__Cim">Technológiák:</p>
+              <p class="rolam-kepessegek__cim">Technológiák:</p>
               <ul class="rolam-kepessegek__lista">
                 <li class="rolam-kepessegek__elem">HTML</li>
                 <li class="rolam-kepessegek__elem">CSS</li>
@@ -108,8 +109,10 @@
               elementum facilisis nunc.
             </p>
             <div class="rolam-tartalom__container">
-              <button class="rolam-tartalom__gomb">Kapcsolat</button>
-              <button class="rolam-tartalom__gomb">Önéletrajz</button>
+              <button class="rolam-tartalom__gomb gomb-kapcsolat">
+                Kapcsolat
+              </button>
+              <button class="rolam-tartalom__gomb gomb-cv">Önéletrajz</button>
             </div>
           </div>
         </div>
@@ -118,7 +121,7 @@
 
       <!-- ---PORTFÓLIÓ---    -->
       <section id="portfolio" class="portfolio">
-        <h2 class="portfolio-cim">Portfólió</h2>
+        <h2 class="portfolio-cim section-cim">Portfólió</h2>
         <div class="portfolio-container">
           <div class="portfolio-projekt">
             <img
@@ -174,7 +177,7 @@
 
       <!-- ---KAPCSOLAT---    -->
       <section id="kapcsolat" class="kapcsolat">
-        <h2 class="kapcsolat-cim">Kapcsolat</h2>
+        <h2 class="kapcsolat-cim section-cim">Kapcsolat</h2>
         <h3 class="kapcsolat-szoveg">Lépj velem kapcsolatba</h3>
         <form class="kapcsolat-form">
           <input type="text" id="name" name="name" placeholder="Név" />

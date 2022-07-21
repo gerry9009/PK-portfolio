@@ -1,0 +1,162 @@
+.rolam {
+  border-bottom: 1px solid var(--orange);
+}
+
+.rolam-container {
+  background: var(--lightgray);
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.rolam-kepessegek {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rolam-kepessegek__kep {
+  max-width: 525px;
+  margin: 0 auto;
+  transform: scaleX(-1);
+}
+
+.rolam-kepessegek__container {
+  background: var(--orange);
+  padding: 1rem;
+}
+
+.rolam-kepessegek__cim {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.rolam-kepessegek__lista {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.rolam-kepessegek__elem {
+  margin: 1rem 0;
+}
+
+.rolam-tartalom {
+  padding: 30px;
+}
+
+.rolam-tartalom__udv {
+  color: var(--gray);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.rolam-tartalom__nev {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+}
+
+.rolam-tartalom__szoveg {
+  font-size: 1.2rem;
+  margin-top: 5vh;
+}
+
+.rolam-tartalom__container {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rolam-tartalom__gomb {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  min-width: 150px;
+  margin: 2px 0;
+}
+
+.gomb-kapcsolat {
+  border: 1px solid var(--orange);
+  background: var(--orange);
+}
+
+.gomb-cv {
+  border: 1px solid var(--black);
+}
+
+.gomb-kapcsolat:hover {
+  box-shadow: 1px 1px 5px 1px var(--white);
+}
+
+.gomb-cv:hover {
+  box-shadow: 1px 1px 5px 1px var(--gray);
+}
+
+@media screen and (min-width: 576px) {
+  .rolam {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .rolam-kepessegek__cim {
+    font-size: 1.8rem;
+  }
+
+  .rolam-kepessegek__lista {
+    font-size: 1.4rem;
+  }
+
+  .rolam-kepessegek__kep {
+    width: 60%;
+  }
+
+  .rolam-tartalom {
+    padding: 4rem;
+  }
+
+  .rolam-tartalom__udv {
+    font-size: 1.6rem;
+  }
+
+  .rolam-tartalom__nev {
+    font-size: 2.2rem;
+  }
+
+  .rolam-tartalom__szoveg {
+    font-size: 1.4rem;
+  }
+
+  .rolam-tartalom__gomb {
+    padding: 0.8rem 2.4rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .rolam {
+    height: 100vh;
+    padding: 100px 50px;
+  }
+
+  .rolam-container {
+    flex-direction: row;
+    max-width: 990px;
+    margin: 0 auto;
+  }
+
+  .rolam-kepessegek {
+    width: 30%;
+  }
+
+  .rolam-kepessegek__kep {
+    width: 100%;
+  }
+
+  .rolam-kepessegek__container {
+    height: 100%;
+  }
+}
