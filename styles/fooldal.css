@@ -31,6 +31,7 @@
 .fooldal-container__kiemeles {
   color: var(--orange);
   margin-bottom: 20px;
+  display: block;
 }
 
 .fooldal-container__gomb {
